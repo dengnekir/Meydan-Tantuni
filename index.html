@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meydan Tantuni</title>
+
+    <!-- Favicon - mevcut logo -->
+    <link rel="icon" type="image/png" href="img/tantuni.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Meydan Tantuni & Kavurma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#anasayfa">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menü</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iletisim">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+905354253297">
+                <i class="bi bi-telephone-fill"></i> 0535 425 3297
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/servet_kavurma?igsh=MzQyeXMxcDRpbXFw"
+                target="_blank"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Logo ve Başlık Bölümü (Navbar ve Video arasına) -->
+    <section class="hero-section">
+      <div class="container text-center">
+        <div class="logo-container">
+          <img
+            src="img/tantuni.png"
+            alt="Meydan Tantuni Logo"
+            class="main-logo"
+          />
+        </div>
+        <h1 class="hero-title">Meydan Tantuni & Kavurma</h1>
+        <p class="hero-subtitle">Mersin'in Eşsiz Lezzeti</p>
+      </div>
+    </section>
+
+    <!-- Ana Sayfa Video -->
+    <section id="anasayfa" class="video-section">
+      <video autoplay muted loop id="myVideo">
+        <source src="img/1.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay">
+        <h1>Lezzet Tantuni</h1>
+        <p>En özel tantuni lezzetleri için doğru adres</p>
+      </div>
+    </section>
+
+    <!-- Menü Bölümü -->
+    <section id="menu" class="py-5 menu-section">
+      <div class="container">
+        <h2 class="text-center">Menümüz</h2>
+
+        <!-- Menü Tabları -->
+        <ul
+          class="nav nav-pills menu-tabs justify-content-center mb-4"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="pill"
+              data-bs-target="#etTantuni"
+            >
+              Et Tantuni
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#tavukTantuni"
+            >
+              Tavuk Tantuni
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#kavurmaKofte"
+            >
+              Kavurma & Köfte
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#icecekler"
+            >
+              İçecekler
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#menuResmi"
+            >
+              Fiyat Listesi
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab İçerikleri -->
+        <div class="tab-content">
+          <!-- Et Tantuni -->
+          <div class="tab-pane fade show active" id="etTantuni">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img
+                    src="img/yogurtluettantuni.jpg"
+                    alt="Yoğurtlu Et Tantuni"
+                  />
+                  <div class="menu-item-content">
+                    <h5>Yoğurtlu Et Tantuni</h5>
+                    <div class="menu-item-price">180,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img
+                    src="img/ekmekarasıettantuni.jpg"
+                    alt="Et Lokma Tantuni"
+                  />
+                  <div class="menu-item-content">
+                    <h5>Ekmek Arası Et Tantuni</h5>
+                    <div class="menu-item-price">220,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ettantuni.jpg" alt="Et Porsiyon Tantuni" />
+                  <div class="menu-item-content">
+                    <h5>Dürüm Et Tantuni</h5>
+                    <div class="menu-item-price">140,00TL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tavuk Tantuni -->
+          <div class="tab-pane fade" id="tavukTantuni">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/tavuktantuni.jpg" alt="Dürüm Tavuk Tantuni" />
+                  <div class="menu-item-content">
+                    <h5>Dürüm Tavuk Tantuni</h5>
+                    <div class="menu-item-price">90,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img
+                    src="img/ekmekarasıtavuktantuni.png"
+                    alt="Ekmek Arası Tavuk Tantuni"
+                  />
+                  <div class="menu-item-content">
+                    <h5>Ekmek Arası Tavuk Tantuni</h5>
+                    <div class="menu-item-price">170,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img
+                    src="img/yogurtlutavuk.jpg"
+                    alt="Yoğurtlu Tavuk Tantuni"
+                  />
+                  <div class="menu-item-content">
+                    <h5>Yoğurtlu Tavuk Tantuni</h5>
+                    <div class="menu-item-price">130,00TL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kavurma & Köfte -->
+          <div class="tab-pane fade" id="kavurmaKofte">
+            <div class="row">
+              <!-- Kavurma Çeşitleri -->
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/porsiyonkavurma.jpeg" alt="Porsiyon Kavurma" />
+                  <div class="menu-item-content">
+                    <h5>Porsiyon Kavurma</h5>
+                    <div class="menu-item-price">320,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ekmekarasıkavurma.png" alt="Porsiyon Kavurma" />
+                  <div class="menu-item-content">
+                    <h5>Ekmek Arası Kavurma</h5>
+                    <div class="menu-item-price">200,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img
+                    src="img/pilavustukavurma.jpg"
+                    alt="Pilav Üstü Kavurma"
+                  />
+                  <div class="menu-item-content">
+                    <h5>Pilav Üstü Kavurma</h5>
+                    <div class="menu-item-price">280,00TL</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Köfte Çeşitleri -->
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ekmekarasıkofte.jpg" alt="Ekmek Arası Köfte" />
+                  <div class="menu-item-content">
+                    <h5>Ekmek Arası Köfte</h5>
+                    <div class="menu-item-price">190,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/porsiyonkofte.webp" alt="Porsiyon Köfte" />
+                  <div class="menu-item-content">
+                    <h5>Porsiyon Köfte</h5>
+                    <div class="menu-item-price">290,00TL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- İçecekler -->
+          <div class="tab-pane fade" id="icecekler">
+            <div class="row">
+              <!-- Ayran Çeşitleri -->
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ayran-pidem.png" alt="Ayran" />
+                  <div class="menu-item-content">
+                    <h5>Ayran</h5>
+                    <div class="menu-item-price">45,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ayran.png" alt="Acılı Ayran" />
+                  <div class="menu-item-content">
+                    <h5>Ekşili Ayran</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ayran2.png" alt="Ekşili Ayran" />
+                  <div class="menu-item-content">
+                    <h5>Acılı Ayran</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Soda Çeşitleri -->
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/sodasade.webp" alt="Sade Soda" />
+                  <div class="menu-item-content">
+                    <h5>Sade Soda</h5>
+                    <div class="menu-item-price">40,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/sodalimon.webp" alt="Limonlu Soda" />
+                  <div class="menu-item-content">
+                    <h5>Limonlu Soda</h5>
+                    <div class="menu-item-price">45,00TL</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gazlı İçecekler -->
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/fanta.jpg" alt="Fanta Kutu" />
+                  <div class="menu-item-content">
+                    <h5>Fanta Kutu</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/sprite.jpeg" alt="Sprite Kutu" />
+                  <div class="menu-item-content">
+                    <h5>Sprite Kutu</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/ocacola.jpg" alt="Coca Cola Cam Şişe" />
+                  <div class="menu-item-content">
+                    <h5>Coca Cola Cam Şişe</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/colaturka.webp" alt="Cola Turka" />
+                  <div class="menu-item-content">
+                    <h5>Cola Turka</h5>
+                    <div class="menu-item-price">50,00TL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="menu-item-card">
+                  <img src="img/cola1.jpg" alt="1lt Cola" />
+                  <div class="menu-item-content">
+                    <h5>1lt Cola</h5>
+                    <div class="menu-item-price">120,00TL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menü Resmi Tab İçeriği -->
+          <div class="tab-pane fade" id="menuResmi">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="menu-image-container">
+                  <img
+                    src="img/menu.png"
+                    alt="Meydan Tantuni Menü"
+                    class="menu-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Özellikler Bölümü -->
+    <section class="features-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Hızlı Servis -->
+          <div class="col-md-3">
+            <div class="feature-item">
+              <i class="bi bi-truck"></i>
+              <h3>Hızlı Servis</h3>
+              <p>
+                İstanbul Avrupa Yakası'nda Kendi Motorlu Kuryelerimiz ile Hızlı
+                Teslimat
+              </p>
+            </div>
+          </div>
+
+          <!-- Müşteri Memnuniyeti -->
+          <div class="col-md-3">
+            <div class="feature-item">
+              <i class="bi bi-people"></i>
+              <h3>Müşteri Memnuniyeti</h3>
+              <p>
+                Siz Değerli Müşterilerimizi Güler Yüzlü Kadromuz ile A��ırlamak
+                Öncelikli Amacımız
+              </p>
+            </div>
+          </div>
+
+          <!-- Ödeme Seçenekleri -->
+          <div class="col-md-3">
+            <div class="feature-item">
+              <i class="bi bi-credit-card"></i>
+              <h3>Çoklu Ödeme İmkanı</h3>
+              <p>
+                Nakit, Kredi Kartı, Sodexo, Multinet, Ticket ve Setcard ile
+                Ödeme İmkanı
+              </p>
+            </div>
+          </div>
+
+          <!-- Şubeler -->
+          <div class="col-md-3">
+            <div class="feature-item">
+              <i class="bi bi-shop"></i>
+              <h3>Şubelerimiz</h3>
+              <p>Halkalı Merkez Şubemiz ile Hizmetinizdeyiz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">İletişim</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.8846751466385!2d28.777234!3d41.046519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4e6f6e3e747%3A0x3f8f47f730b4d837!2sHalkal%C4%B1%20Merkez%2C%20Karakol%20Sk.%20No%3A15%2C%2034303%20K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1624451234567!5m2!1str!2str"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <h3 class="contact-title">Bize Ulaşın</h3>
+
+            <p class="contact-info">
+              <i class="bi bi-telephone"></i>
+              Tel:
+              <a href="tel:+905354253297" class="contact-link"
+                >(535) 425 32 97</a
+              >
+            </p>
+
+            <p class="contact-info">
+              <i class="bi bi-geo-alt"></i>
+              Adres: Halkalı Merkez Mahallesi, Karakol Sokak No:15/C,
+              Küçükçekmece/İstanbul
+            </p>
+
+            <p class="contact-info">
+              <i class="bi bi-clock"></i>
+              Çalışma Saatleri: Her gün 08:00 - 03:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

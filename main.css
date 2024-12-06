@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+body {
+  background: linear-gradient(to bottom, #2c2c2c, #4a4a4a, #666);
+  color: white;
+}
+
+.navbar {
+  background: linear-gradient(
+    to right,
+    rgba(44, 44, 44, 0.95),
+    rgba(68, 68, 68, 0.9)
+  );
+  border-bottom: 2px solid rgba(231, 76, 60, 0.7);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar-brand:hover {
+  color: #ffd7d4;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd7d4 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #e74c3c;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #e74c3c;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.video-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 100%;
+  min-height: 70vh;
+}
+
+.menu-item {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #e74c3c;
+}
+
+.menu-category {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border-bottom: 3px solid #e74c3c;
+}
+
+.menu-category h3 {
+  color: #e74c3c;
+  margin-bottom: 1.5rem;
+}
+
+.menu-option {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-option img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.menu-option img:hover {
+  transform: scale(1.05);
+}
+
+.menu-option-content {
+  flex: 1;
+}
+
+#iletisim {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.menu-tabs {
+  background: #e74c3c;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.menu-tabs .nav-link {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-tabs .nav-link:hover {
+  color: #ffd7d4;
+  transform: translateY(-2px);
+}
+
+.menu-tabs .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.menu-tabs .nav-link:hover::after {
+  width: 80%;
+}
+
+.menu-tabs .nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.menu-item-card {
+  background: linear-gradient(145deg, #2c2c2c, #404040);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover img {
+  transform: scale(1.05);
+}
+
+.menu-item-content {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.menu-item-content h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.menu-item-price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.badge-new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2196f3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.badge-hot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.menu-section h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  color: #e74c3c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+}
+
+.navbar .bi {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.navbar .nav-link:hover .bi {
+  color: #e74c3c;
+}
+
+.hero-section {
+  padding: 120px 0 60px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/pattern-bg.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 30px;
+}
+
+.main-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid #e74c3c;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0 0 10px rgba(231, 76, 60, 0.3));
+}
+
+.hero-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.features-section {
+  background: linear-gradient(rgba(44, 44, 44, 0.95), rgba(68, 68, 68, 0.9));
+  padding: 60px 0;
+  color: white;
+}
+
+.feature-item {
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-item i {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-item p {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.menu-image-section {
+  padding: 20px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.menu-image-container {
+  text-align: center;
+  max-width: 600px; /* Daha da küçülttük */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.menu-image {
+  width: 100%;
+  max-height: 60vh; /* Ekran yüksekliğinin %60'ı */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.3);
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 768px) {
+  .menu-image-container {
+    max-width: 90%; /* Mobilde kenarlardan biraz boşluk */
+  }
+
+  .menu-image {
+    max-height: 50vh; /* Mobilde daha küçük */
+  }
+}
+.contact-title {
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.contact-info {
+  color: white;
+  margin-bottom: 20px; /* Satır aralığını da biraz artırdık */
+  transition: color 0.3s ease;
+  font-size: 1.1rem; /* Yazı boyutunu da biraz artırdık */
+  display: flex; /* İkonları ve metni hizalamak için */
+  align-items: center; /* Dikey ortalama */
+}
+
+.contact-info:hover {
+  color: #e74c3c;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #e74c3c;
+}
+
+.contact-text {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.contact-info:hover .contact-text {
+  color: #e74c3c;
+}
+
+.contact-info i {
+  margin-right: 15px; /* Biraz daha boşluk */
+  color: #e74c3c;
+  font-size: 1.8rem; /* İkon boyutunu büyüttük */
+  vertical-align: middle; /* Dikey hizalama için */
+}
